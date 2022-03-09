@@ -8,18 +8,23 @@ const assertEqual = function(actual, expected) {
 
 // code here on
 const eqArrays = function (arr1, arr2) {
-  let isEq = undefined
+  let isEq = undefined;
+  let longestArr = undefined;
+  if (arr1.length < arr2.length) {
+    longestArr = arr2;
+  } else if (arr2.length < arr1.length) {
+    longestArr = arr1;
+  } else {
+    longestArr = arr1;
+  }
   // need to create a loop that compares each individual element within each of the arrays
-  for (let i = 0; i < arr1.length; i++) {
+  for (let i = 0; i < longestArr.length; i++) {
     // need a statement to determine if the element is the same 
     if (arr1[i] === arr2[i]) {
       isEq = true;
     } else {
       isEq = false;
     }
-    console.log(isEq)
   }
   return isEq;
-}
-
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+};

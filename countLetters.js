@@ -9,17 +9,17 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(aString) {
   const result = {};
 
-  for (letter of aString) {    
-    if(letter !== " ") {
-      if(result[letter]) {
+  for (letter of aString) {
+    if (letter !== " ") {
+      if (result[letter]) {
         result[letter] += 1;
       } else {
-      result[letter] = 1
+        result[letter] = 1;
       }
     }
   }
   return result;
-}
+};
 
 
-console.log(countLetters("lighthouse in the house"))
+console.log(countLetters("lighthouse in the house"));

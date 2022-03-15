@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@mako99/lotide",
   "version": "1.0.0",
-  "description": "a library of functions created by ME!",
+  "description": "a library of functions based on the existing library: Lodash, except this was all coded by ME!",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Mveer100/Lotide.git"
   },
-  "author": "",
+  "author": "Mveer100",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Mveer100/Lotide/issues"

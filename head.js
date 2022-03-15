@@ -4,6 +4,5 @@ const head = function(someArray) {
     } else {
       return someArray[0]
     }    
-}
-
+};
 module.exports = head;
